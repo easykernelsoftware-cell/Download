@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cabin Music — Privacy Policy</title>
+<meta name="description" content="Privacy policy for Cabin Music, an offline music player for Android. The app collects, stores and transmits no personal data.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfaf8;
+    --panel: #ffffff;
+    --ink: #1c1a17;
+    --muted: #6b645c;
+    --rule: #e4dfd7;
+    --accent: #a4551f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16140f;
+      --panel: #1e1b16;
+      --ink: #ece7df;
+      --muted: #a49b8f;
+      --rule: #322d25;
+      --accent: #e0954f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.25rem 5rem;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin: 0 0 .4rem;
+  }
+  .updated { color: var(--muted); font-size: .9rem; margin: 0 0 2.5rem; }
+  h2 {
+    font-size: 1.15rem;
+    letter-spacing: -0.01em;
+    margin: 2.75rem 0 .75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 0; }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .4rem; }
+  strong { font-weight: 650; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: .875em;
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: .1em .35em;
+  }
+  .lede {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    padding: 1.1rem 1.25rem;
+    margin: 0 0 1.25rem;
+    font-size: 1.05rem;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+  .table-wrap { overflow-x: auto; margin: 0 0 1.25rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .95rem; }
+  th, td {
+    text-align: left;
+    vertical-align: top;
+    padding: .6rem .75rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  th { font-weight: 650; color: var(--muted); font-size: .85rem; text-transform: uppercase;
+       letter-spacing: .04em; }
+  td:first-child { white-space: normal; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .875rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Cabin Music — Privacy Policy</h1>
+  <p class="updated">Last updated: 3 September 2026</p>
+
+  <h2>Summary</h2>
+  <div class="lede">
+    <p><strong>Cabin Music does not collect, store, or transmit any personal data.</strong></p>
+  </div>
+  <p>
+    Cabin Music cannot reach the internet. The app does not request the
+    <code>INTERNET</code> permission, which means no data can technically leave your
+    device. Nobody, including the developer, can see your data.
+  </p>
+
+  <h2>What the app accesses</h2>
+  <p>Cabin Music plays music stored on your device. It uses these permissions to do so:</p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th scope="col">Permission</th><th scope="col">Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Read audio files (<code>READ_MEDIA_AUDIO</code>)</td>
+          <td>List and play the music on this device</td>
+        </tr>
+        <tr>
+          <td>Notifications (<code>POST_NOTIFICATIONS</code>)</td>
+          <td>Show playback controls</td>
+        </tr>
+        <tr>
+          <td>Foreground service (<code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>)</td>
+          <td>Keep playing while the app is not on screen</td>
+        </tr>
+        <tr>
+          <td>Wake lock (<code>WAKE_LOCK</code>)</td>
+          <td>Stop the device sleeping mid-track</td>
+        </tr>
+        <tr>
+          <td>Modify audio settings (<code>MODIFY_AUDIO_SETTINGS</code>)</td>
+          <td>Apply the equaliser, bass boost and virtualiser</td>
+        </tr>
+        <tr>
+          <td>Delete files (<code>WRITE_EXTERNAL_STORAGE</code>, Android&nbsp;9 and below)</td>
+          <td>Only when you choose to delete a track from within the app</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    Every one of these is used on the device alone. None is used to send data anywhere,
+    and none could be.
+  </p>
+
+  <h2>What the app stores</h2>
+  <p>Cabin Music stores the following <strong>on your device only</strong>:</p>
+  <ul>
+    <li>Favourited tracks, groups you created, and any order you arranged by hand</li>
+    <li>Titles, artists, album names and cover colours you corrected yourself</li>
+    <li>Playback settings (sort order, repeat, shuffle, speed, equaliser)</li>
+    <li>Display settings (theme, language)</li>
+    <li>The last track played and your position in it</li>
+  </ul>
+  <p>
+    This lives in the app's private storage, unreadable by other apps, and is deleted
+    when you uninstall the app.
+  </p>
+
+  <h2>Backup and moving to a new device</h2>
+  <p>
+    <strong>Excluded from cloud backup.</strong> None of the data above — your
+    favourites, your groups, lyrics you typed, corrections you made — is included in
+    Android's automatic backup, and none of it is therefore sent to Google's servers.
+  </p>
+  <p>
+    <strong>Carried over on a direct transfer.</strong> On Android 12 and above, the
+    data does travel when you move it straight from an old phone to a new one. That
+    transfer happens between the two devices and is not stored on a server along the
+    way. On Android 11 and below, a cloud backup and a direct transfer cannot be told
+    apart, so the data travels on neither.
+  </p>
+  <p>
+    On the new device, what was stored is matched back against the music that phone
+    holds. Anything that names a track the new phone does not have stays unmatched
+    rather than being applied to a different song.
+  </p>
+  <p>
+    Your chosen language means the same thing on any device and is backed up in both
+    cases.
+  </p>
+
+  <h2>Third parties</h2>
+  <p>
+    Cabin Music contains no advertising, no analytics, and no crash reporting. It
+    bundles no third-party SDKs.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    Cabin Music collects no personal data from any user, so there is nothing collected
+    from children either.
+  </p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the date at the top of this document changes with it.</p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about the app or about this policy go to
+    <a href="mailto:easykernelsoftware@gmail.com">easykernelsoftware@gmail.com</a>.
+  </p>
+
+  <footer>Cabin Music for Android</footer>
+
+</main>
+</body>
+</html>
