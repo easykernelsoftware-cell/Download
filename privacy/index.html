@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cabin Music — Privacy Policy</title>
-<meta name="description" content="Privacy policy for Cabin Music, an offline music player for Android. The app collects, stores and transmits no personal data.">
+<meta name="description" content="Privacy policy for Cabin Music, an offline music player for Android. The app does not collect or send user data to developer servers.">
 <style>
   :root {
     color-scheme: light dark;
@@ -98,16 +98,20 @@
 <main>
 
   <h1>Cabin Music — Privacy Policy</h1>
-  <p class="updated">Last updated: 3 September 2026</p>
+  <p class="updated">Last updated: 25 November 2026</p>
 
   <h2>Summary</h2>
   <div class="lede">
-    <p><strong>Cabin Music does not collect, store, or transmit any personal data.</strong></p>
+    <p><strong>Cabin Music does not collect or send user data to developer servers.</strong></p>
   </div>
   <p>
-    Cabin Music cannot reach the internet. The app does not request the
-    <code>INTERNET</code> permission, which means no data can technically leave your
-    device. Nobody, including the developer, can see your data.
+    The app does not request the <code>INTERNET</code> permission. Information used for
+    playback is stored in the app's private storage on your device. When you export a
+    backup or playlist, the app writes a file to the location you choose.
+  </p>
+  <p>
+    The app has an optional paid feature set (PRO). Payment is handled entirely by
+    Google Play; the app never receives your payment method or card details.
   </p>
 
   <h2>What the app accesses</h2>
@@ -142,22 +146,32 @@
           <td>Delete files (<code>WRITE_EXTERNAL_STORAGE</code>, Android&nbsp;9 and below)</td>
           <td>Only when you choose to delete a track from within the app</td>
         </tr>
+        <tr>
+          <td>In-app billing (<code>com.android.vending.BILLING</code>)</td>
+          <td>Buy PRO through Google Play and check whether it has been bought</td>
+        </tr>
+        <tr>
+          <td>Network state (<code>ACCESS_NETWORK_STATE</code>)</td>
+          <td>Added by the media playback library. The app plays files on the device and makes no network connections</td>
+        </tr>
       </tbody>
     </table>
   </div>
   <p>
-    Every one of these is used on the device alone. None is used to send data anywhere,
-    and none could be.
+    Playback permissions are used on the device. Import and export access the file or
+    location you choose through Android's file picker.
   </p>
 
   <h2>What the app stores</h2>
-  <p>Cabin Music stores the following <strong>on your device only</strong>:</p>
+  <p>Cabin Music keeps the following in the app's private storage:</p>
   <ul>
     <li>Favourited tracks, groups you created, and any order you arranged by hand</li>
     <li>Titles, artists, album names and cover colours you corrected yourself</li>
     <li>Playback settings (sort order, repeat, shuffle, speed, equaliser)</li>
     <li>Display settings (theme, language)</li>
-    <li>The last track played and your position in it</li>
+    <li>Play counts, recent playback times, and the last playback positions for tracks and groups</li>
+    <li>Lyrics you enter or read from audio files</li>
+    <li>Whether PRO is unlocked (the result of checking your Google Play purchases)</li>
   </ul>
   <p>
     This lives in the app's private storage, unreadable by other apps, and is deleted
@@ -166,9 +180,9 @@
 
   <h2>Backup and moving to a new device</h2>
   <p>
-    <strong>Excluded from cloud backup.</strong> None of the data above — your
-    favourites, your groups, lyrics you typed, corrections you made — is included in
-    Android's automatic backup, and none of it is therefore sent to Google's servers.
+    <strong>The music library database is excluded from automatic cloud backup.</strong>
+    This applies to database entries such as groups, favourites, lyrics and listening
+    history.
   </p>
   <p>
     <strong>Carried over on a direct transfer.</strong> On Android 12 and above, the
@@ -186,11 +200,27 @@
     Your chosen language means the same thing on any device and is backed up in both
     cases.
   </p>
+  <p>
+    <strong>Manual exports are saved to the location you choose.</strong> A backup can
+    contain folder paths, filenames, groups, favourites, edits, lyrics, listening
+    history and settings. An M3U8 playlist contains paths to audio files. Neither
+    export includes the audio files themselves. If you choose a cloud provider such as
+    Google Drive, that provider may store the file under its own policies. The app does
+    not upload it automatically.
+  </p>
 
   <h2>Third parties</h2>
   <p>
-    Cabin Music contains no advertising, no analytics, and no crash reporting. It
-    bundles no third-party SDKs.
+    Cabin Music contains no advertising, no analytics, and no crash reporting.
+  </p>
+  <p>
+    The only third-party component is the <strong>Google Play Billing library</strong>,
+    used for the PRO purchase. It talks to the Google Play Store app on your device, and
+    Google processes the payment under Google's own terms and privacy policy. Cabin
+    Music does not receive payment method details. Google Play tells the app whether
+    the purchase has been made, and it is restored on a reinstall or a new device with
+    the same Google account. The developer can see the sales reports Google Play
+    Console provides.
   </p>
 
   <h2>Children</h2>
